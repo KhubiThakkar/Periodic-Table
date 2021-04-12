@@ -9,32 +9,45 @@ You might need to find the element using their properties like: name, symbol and
 
 ### Defining Our System
 This project will use file handling in C i.e. creating file and accessing the stored data in the file. The main functions used in designing the Mordern Periodic Table project are: 
-> ADD(): This function is used to ADD new elements inside the file.  
-> SEARCH(): This function is used to search the stored information in the file created. 
-> MAINSCREEN(): This function is used to print the main screen or menu of the project.
+> `ADD()`: This function is used to ADD new elements inside the file.  
+> `SEARCH()`: This function is used to search the stored information in the file created. 
+> `MAINSCREEN()`: This function is used to print the main screen or menu of the project.
 
 ### SWOT ANALYSIS
 ![SWOT](https://github.com/KhubiThakkar/Periodic-Table/blob/req/6_ImagesAndVideos/SWOT.png)
 
-4W's and 1'H
-Who:
-TBD
+### 4W's and 1'H
+**Who:**
+Students, researchers, chemical engineerings, analytic chemist, biotechnologist, pharmecologist and others use periodic tables on a regular basis and needs to access the chemical properties of the elements.
 
-What:
-TBD
+**What:**
+Using periodic table everyday can be tedious as it gives only the basic information about the elements all the other details like electronic configuration needs to be derived. There are exceptions in the derivations which need to be kept in mind, so using this system will minimize the time and effort in working with periodic tables.
 
-When:
-TBD
+**When:**
+If there is need to develop better understanding of the elements, derive the electronic configurations and get information of the chemical and physical properties of the elements. 
 
-Where:
-TBD
+**Where:**
+Application can be used at pharmalogical laboratories, research & development labs, Biosafety lab, etc. Professions that depend on identifing the elements can use this application.
 
-How:
-TBD
+**How:**
+There is a database of elements in the application stored in an csv file in which you can also add new elements upon discovery. You can search the elements based on different basic properties.
 
-Detail requirements
-High Level Requirements:
---- TBD in Tabular Format -- ID | Description | Status (Implemented/Future)
+# Detail requirements
+### High Level Requirements:
+ID | Description | Category | Status
+:---: | :--- | :---: | :---:
+HLR01 | Enter Data | Technical | TBD
+HLR02 | Search Data | Technical | TBD
+HLR03 | Delete Data | Tecchnical | Future
+ 
 
-Low level Requirements:
---- TBD in Tabular Format -- ID | Description | Status (Implemented/Future)
+### Low level Requirements:
+ID | Description | HLR ID | Status
+:---: | :--- | :---: | :---:
+LR00 | Main screen for navigation |-|TBD
+LR01 | Develop a function for entering the data in the file | HLR01 |TBD
+LR02 | Serching through name of the element | HLR02 | TBD
+LR03 | Searching through symbol of the element | HLR02 | TBD
+LR04 | Seaching through atomic number | HLR02 | TBD
+LR05 | If not records are found show Error message | HLR02 | TBD
+
