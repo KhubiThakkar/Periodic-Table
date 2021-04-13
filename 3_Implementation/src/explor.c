@@ -1,6 +1,7 @@
 #include "elements.h"
 
 void search() {
+    char ele[20];
 	newScreen();
 	printf("SREACH BY :- \n\n");
 	printf("\t1 -> ELEMENT\n");
@@ -14,11 +15,20 @@ void search() {
         printf("Can't open file\n");
     }else{
         if (choice2==1){
-            byName(fp);
+            printf("ENTER THE ELEMENT'S NAME : ");
+            scanf("%s",ele);
+            byName(fp,ele);
+            again();
         } else if (choice2==2){
-            bySym(fp);
+            printf("ENTER THE ELEMENT'S SYMBOL : ");
+            scanf("%s",ele);
+            bySym(fp,ele);
+            again();
         } else if (choice2==3){
-            byAtNum(fp);
+            printf("ENTER THE ELEMENT'S ATOMIC NUMBER : ");
+            scanf("%s",ele);
+            byAtNum(fp,ele);
+            again();
         } else {
             search();
         }

@@ -43,9 +43,9 @@ int main();
 void clrscr();
 void quit();
 void search();
-void byAtNum(FILE *f);
+int byAtNum(FILE *f, char *ele);
 void again();
-void bySym(FILE *f);
-void byName(FILE *f);
+int bySym(FILE *f,char *ele);
+int byName(FILE *f,char *ele);
 
 #endif

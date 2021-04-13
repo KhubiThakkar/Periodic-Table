@@ -1,10 +1,7 @@
 #include "elements.h"
 
-void byName(FILE *fp){
+int byName(FILE *fp, char *ele){
 	newScreen();
-	char ele[20];
-	printf("ENTER THE ELEMENT'S NAME : ");
-	scanf("%s",ele);
 
     char buffer[1024];
     int row = 0;
@@ -137,18 +134,19 @@ void byName(FILE *fp){
             value = strtok(NULL, ",");
             column++;
         }
-        if(strcmp(atom.name,ele) == 0)
-        {
+        if(strcmp(atom.name,ele) == 0){
             printf("\n");
             printf(" Name: %s\n Atomic Number: %s\n Symbol: %s\n Atomic Weight: %s\n Neutrons: %s\n Protons: %s\n Electrons: %s\n Period: %s\n Group: %s\n Phase: %s\n Radioactive: %s\n Natural: %s\n Metal: %s\n Nonmetal: %s\n Metalloid: %s\n Type: %s\n Atomic Radius: %s\n Electronegativity: %s\n Ionization: %s\n Density: %s\n Melting point: %s\n Boiling point: %s\n Isotopes: %s\n Discoverer: %s\n Year: %s\n Specific Heat: %s\n Shell: %s\n Valence Electrons: %s\n",atom.name,atom.anum,atom.symb,atom.awgh,atom.neutrons,atom.protons,atom.electrons,atom.period,atom.group,atom.phase,atom.ra,atom.nat,atom.metal,atom.nonmetal,atom.metalloid,atom.type,atom.rad,atom.en,atom.ion,atom.den,atom.mp,atom.bp,atom.iso,atom.dis,atom.year,atom.heat,atom.shell,atom.valence);
-            break;
-        }else if(row == 119)
-        {
-             printf("Match not found");
+            fclose(fp);
+            return 0;
+        }
+        else if(row == 119){
+            
+            printf("Match not found");
+            fclose(fp);
+            return 1;
+             
         }     
     }
     
-    fclose(fp);
-
-    again();
 }
