@@ -9,7 +9,7 @@ You might need to find the element using their properties like: name, symbol and
 
 ### Defining Our System
 This project will use file handling in C i.e. creating file and accessing the stored data in the file. The main functions used in designing the Mordern Periodic Table project are: 
-> `SEARCH()`: This function is used to search the stored information in the file created. 
+> `SEARCH()`: This function is used to search the stored information in the file created.  
 > `MAINSCREEN()`: This function is used to print the main screen or menu of the project.
 
 ### SWOT ANALYSIS
