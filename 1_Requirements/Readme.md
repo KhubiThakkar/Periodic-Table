@@ -36,7 +36,7 @@ There is a database of elements in the application stored in an csv file in whic
 ID | Description | Category | Status
 :---: | :--- | :---: | :---:
 HLR01 | Search Data | Technical | TBD
-HLR | Enter/Delete Data | Tecchnical | Future
+HLR02 | Enter/Delete Data | Tecchnical | Future
  
 ### Low level Requirements:
 ID | Description | HLR ID | Status
