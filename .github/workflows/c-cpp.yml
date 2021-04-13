@@ -14,10 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: make
+      run: make -C Periodic-Table/3_Implementation/
     - name: Run
-      run: make run
+      run: make run -C Periodic-Table/3_Implementation/
     - name: Test Case
-      run: make test
+      run: make test -C Periodic-Table/3_Implementation/
     - name: Memory leak
-      run: make leak
+      run: make leak -C Periodic-Table/3_Implementation/
