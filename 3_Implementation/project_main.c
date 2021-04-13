@@ -14,4 +14,5 @@ int main() {
 	} else {
 		main();
 	}
+	return 0;
 }

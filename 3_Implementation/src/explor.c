@@ -5,8 +5,7 @@ void search() {
 	printf("SREACH BY :- \n\n");
 	printf("\t1 -> ELEMENT\n");
 	printf("\t2 -> SYMBOL\n");
-	printf("\t3 -> ATOMIC NUMBER\n");
-	printf("\t4 -> ATOMIC WEIGHT\n\n\n\n");
+	printf("\t3 -> ATOMIC NUMBER\n\n");
 	int choice2;
 	printf("YOUR CHOICE : ");
 	scanf("%d",&choice2);
@@ -20,8 +19,6 @@ void search() {
             bySym(fp);
         } else if (choice2==3){
             byAtNum(fp);
-        } else if (choice2==4){
-            byAtWgh(fp);
         } else {
             search();
         }

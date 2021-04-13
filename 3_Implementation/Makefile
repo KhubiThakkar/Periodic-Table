@@ -1,14 +1,18 @@
-PROJ_NAME = complex
+PROJ_NAME = PeriodicTable
 TEST_PROJ_NAME = test_$(PROJ_NAME)
 
 BUILD_DIR = Build
 
-SRC = src/sum.c\
-src/mul.c\
-src/diff.c\
-src/div.c
+SRC = src/again.c\
+src/clear.c\
+src/explor.c\
+src/name.c\
+src/number.c\
+src/quit.c\
+src/screen.c\
+src/symbol.c
 
-TEST_SRC = test_complex.c\
+TEST_SRC = test_$(PROJ_NAME).c\
 unity/unity.c
 
 INC = -Iinc\
@@ -32,7 +36,7 @@ endif
 
 # COMPILE CODE
 all:$(BUILD_DIR)
-	gcc -Wall -g ques.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	gcc -Wall -g project_main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 # RUN CODE
 run: all
@@ -45,7 +49,7 @@ test: $(SRC) $(TEST_SRC)
 
 # COVERAGE CHECK
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage ques.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage project_main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a $(SRC)
 

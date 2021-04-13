@@ -2,12 +2,12 @@
 
 void again() {
 	char ans1[5];
-	printf("\n\n\n\nSEARCH FOR A DIFFERENT ELEMENT? : ");
+	printf("\n\nSEARCH FOR A DIFFERENT ELEMENT? : ");
 	scanf("%s",ans1);
 	if (tolower(ans1[0])=='y'){
 		search();
 	} else {
 		quit();
 	}
-	printf("\n\n\n\n\n\n\n\n\n\n");
+	printf("\n\n");
 }

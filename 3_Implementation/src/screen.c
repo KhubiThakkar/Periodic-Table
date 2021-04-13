@@ -7,8 +7,8 @@ void newScreen() {
 	int length = sizeof(str) - 1;
 	int pad = (length >= width) ? 0 : (width - length) / 2;
 	printf("%*.*s%s\n", pad, pad, " ", str);
-    printf("%s",str);
-	for(int i=0; i<10; i++){
+    // printf("%s",str);
+	for(int i=0; i<4; i++){
 		printf("\n");
 	}
 }

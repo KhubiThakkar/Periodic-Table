@@ -39,10 +39,10 @@ typedef struct element{
 elements atom;
 int i;
 void newScreen();
+int main();
 void clrscr();
 void quit();
 void search();
-void byAtWgh(FILE *f);
 void byAtNum(FILE *f);
 void again();
 void bySym(FILE *f);
