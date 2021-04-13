@@ -1,4 +1,4 @@
-# SDLC Activity Based Learning
+# Modern Periodic Table Application
 
 Visit [Pages for Report -optional](using github.io option)
 

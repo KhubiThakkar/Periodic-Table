@@ -9,7 +9,6 @@ You might need to find the element using their properties like: name, symbol and
 
 ### Defining Our System
 This project will use file handling in C i.e. creating file and accessing the stored data in the file. The main functions used in designing the Mordern Periodic Table project are: 
-> `ADD()`: This function is used to ADD new elements inside the file.  
 > `SEARCH()`: This function is used to search the stored information in the file created. 
 > `MAINSCREEN()`: This function is used to print the main screen or menu of the project.
 
@@ -36,18 +35,15 @@ There is a database of elements in the application stored in an csv file in whic
 ### High Level Requirements:
 ID | Description | Category | Status
 :---: | :--- | :---: | :---:
-HLR01 | Enter Data | Technical | TBD
-HLR02 | Search Data | Technical | TBD
-HLR03 | Delete Data | Tecchnical | Future
+HLR01 | Search Data | Technical | TBD
+HLR | Enter/Delete Data | Tecchnical | Future
  
-
 ### Low level Requirements:
 ID | Description | HLR ID | Status
 :---: | :--- | :---: | :---:
-LR00 | Main screen for navigation |-|TBD
-LR01 | Develop a function for entering the data in the file | HLR01 |TBD
-LR02 | Serching through name of the element | HLR02 | TBD
-LR03 | Searching through symbol of the element | HLR02 | TBD
-LR04 | Seaching through atomic number | HLR02 | TBD
-LR05 | If not records are found show Error message | HLR02 | TBD
-
+LR00 | Main screen for navigation |HR01|TBD
+LR01 | Serching through name of the element | HLR01 | TBD
+LR02 | Searching through symbol of the element | HLR01 | TBD
+LR03 | Seaching through atomic number | HLR01 | TBD
+LR04 | If not records are found show Error message | HLR01 | TBD
+LR05 | Function to quit the system | HLR01 | TBD
