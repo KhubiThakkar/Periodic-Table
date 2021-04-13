@@ -12,7 +12,7 @@ src/quit.c\
 src/screen.c\
 src/symbol.c
 
-TEST_SRC = test_$(PROJ_NAME).c\
+TEST_SRC = test/test_$(PROJ_NAME).c\
 unity/unity.c
 
 INC = -Iinc\
