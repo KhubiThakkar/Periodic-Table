@@ -1,0 +1,21 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run
+      run: make run -C 3_Implementation/
+    - name: Test Case
+      run: make test -C 3_Implementation/
+    - name: Memory leak
+      run: make leak -C 3_Implementation/
