@@ -17,7 +17,8 @@ void search() {
         if (choice2==1){
             printf("ENTER THE ELEMENT'S NAME : ");
             scanf("%s",ele);
-            byName(fp,ele);
+            int result=byName(fp,ele);
+            printf("%d",result);
             again();
         } else if (choice2==2){
             printf("ENTER THE ELEMENT'S SYMBOL : ");

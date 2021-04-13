@@ -2,8 +2,8 @@
 #include "elements.h"
 
 /* Modify these two lines according to the project */
-#include "elements.h"
-#define PROJECT_NAME    "Periodic Table"
+// #include "elements.h"
+// #define PROJECT_NAME    "Periodic Table"
 
 char name1[]="hydrogen";
 char name2[]="Hydrogen";
@@ -17,31 +17,38 @@ char sy1[]="He";
 char sy2[]="ff";
 char sy3[]="Fe";
 char sy4[]="fe";
+
 /* Write all the test functions */ 
 void test_name(void) {
   FILE *ptr = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byName(ptr,name1));
-  // TEST_ASSERT_EQUAL(1, byName(ptr,name4));
-  TEST_ASSERT_EQUAL(0, byName(ptr,name2));
-  TEST_ASSERT_EQUAL(0, byName(ptr,name3));
-  
-  
+  FILE *ptr1 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(0, byName(ptr1,name2));
+  FILE *ptr2 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(0, byName(ptr2,name3));
+  FILE *ptr3 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(1, byName(ptr3,name4));  
 }
-void test_symb(void)  {
+void test_symb(void)  {  
   FILE *ptr = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
-  TEST_ASSERT_EQUAL(1, bySym(ptr,sy2));
   TEST_ASSERT_EQUAL(0, bySym(ptr,sy1));
-  TEST_ASSERT_EQUAL(0, bySym(ptr,sy3));
-  // TEST_ASSERT_EQUAL(1, bySym(ptr,sy4));
-  fclose(ptr);
+  FILE *ptr1 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(0, bySym(ptr1,sy3));
+  FILE *ptr2 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(1, bySym(ptr2,sy4));
+  FILE *ptr3 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(1, bySym(ptr3,sy2));
+
 }
 void test_atnum(void)  {
   FILE *ptr = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byAtNum(ptr,atnm2));
-  // TEST_ASSERT_EQUAL(1, byAtNum(ptr,atnm3));
-  TEST_ASSERT_EQUAL(0, byAtNum(ptr,atnm1));
-  TEST_ASSERT_EQUAL(0, byAtNum(ptr,atnm4));
-  fclose(ptr);
+  FILE *ptr1 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(1, byAtNum(ptr1,atnm3));
+  FILE *ptr2 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(0, byAtNum(ptr2,atnm1));
+  FILE *ptr3 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  TEST_ASSERT_EQUAL(0, byAtNum(ptr3,atnm4));
 }
 
 

@@ -147,6 +147,5 @@ int byName(FILE *fp, char *ele){
             return 1;
              
         }     
-    }
-    
+    } 
 }
