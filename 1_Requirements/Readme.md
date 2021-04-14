@@ -37,7 +37,7 @@ There is a database of elements in the application stored in an csv file in whic
 ID | Description | Category | Status
 :---: | :--- | :---: | :---:
 HLR01 | Search Data | Technical | Done
-HLR02 | Enter/Delete Data | Technical | Future
+HLR02 | Exit System | Technical | Done
  
 ### Low level Requirements:
 ID | Description | HLR ID | Status
@@ -47,4 +47,4 @@ LR01 | Serching through name of the element | HLR01 | Done
 LR02 | Searching through symbol of the element | HLR01 | Done
 LR03 | Seaching through atomic number | HLR01 | Done
 LR04 | If not records are found show Error message | HLR01 | Done
-LR05 | Function to quit the system | HLR01 | Done
+LR05 | Function to quit the system | HLR02 | Done

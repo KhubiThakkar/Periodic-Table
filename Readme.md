@@ -15,14 +15,17 @@ Folder             | Description
 `4_Test_plan`      | Documents with test plans and procedures
 `5_Report`         | Documented details of the project
 `6_ImagesandVideo` | All the images used in Readme and the working of the application
-`7_Other`          | Miscellaneous (empty)
+`7_Other`          | Output files for Test Plans
 
 
 ## Challenges Faced and How Was It Overcome
 
-> 1. Code now working with workflow: 
-        Using the absolute address, so changed to relative address.
-> 2. 
+1. Build workflow not working: Was using the absolute address, so changed to relative address.
+2. Test case not compiling: The file pointer which were passed multiple times in functions was getting closed inside the function. So declaring different pointers for every case.
+3. Code coverage: The code coverage required for me to run the code manually with inputs, so changed the executable with the executable of the test file. 
+4. Test case for void functions: Converted them to int functions and return 0 (on success) | return 1 (on failure)
+5. Unit testcase workflow not working: Needed to add the build function to generate the executables of project_main.c file
+6. Valgrind workflow not working: Needed to add the build function to generate the executables of project_main.c file
 
 
 ## Learning Resources
@@ -30,4 +33,3 @@ Folder             | Description
 2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
 3. [git inspector](https://github.com/ejwa/gitinspector.git)
 4. [github workflow](https://docs.github.com/en/actions/learn-github-action)
-
