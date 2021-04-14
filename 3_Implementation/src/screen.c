@@ -5,7 +5,7 @@
  */
 void newScreen() {
 	clrscr();
-	int width = 132;
+	int width = 125;
 	char str[] = "PERIODIC TABLE";
 	int length = sizeof(str) - 1;
 	int pad = (length >= width) ? 0 : (width - length) / 2;
