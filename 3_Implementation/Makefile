@@ -46,6 +46,7 @@ run: all
 # UNIT TESTING
 test: $(SRC) $(TEST_SRC)
 	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	ls -lla Build
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 # COVERAGE CHECK
