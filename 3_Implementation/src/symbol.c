@@ -1,5 +1,12 @@
 #include "elements.h"
 
+/**
+ * @brief Function to search the .csv file using "symbol" of element
+ * 
+ * @param fp 
+ * @param ele 
+ * @return int 
+ */
 int bySym(FILE *fp,char *ele){
 	newScreen();
 

@@ -1,5 +1,9 @@
 #include "elements.h"
 
+/**
+ * @brief Function to exit the interface
+ * 
+ */
 void quit() {
 	newScreen();
 	char ans[5];

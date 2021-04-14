@@ -1,5 +1,12 @@
 #include "elements.h"
 
+/**
+ * @brief Function to search the .csv file using "name" of element
+ * 
+ * @param fp 
+ * @param ele 
+ * @return int 
+ */
 int byName(FILE *fp, char *ele){
 	newScreen();
 

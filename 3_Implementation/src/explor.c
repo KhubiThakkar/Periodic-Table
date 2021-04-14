@@ -1,10 +1,14 @@
 #include "elements.h"
 
+/**
+ * @brief Function to input based on which parameter: name, symbol, atomic number the searching is to be 
+ * done
+ */
 void search() {
     char ele[20];
 	newScreen();
 	printf("SREACH BY :- \n\n");
-	printf("\t1 -> ELEMENT\n");
+	printf("\t1 -> NAME\n");
 	printf("\t2 -> SYMBOL\n");
 	printf("\t3 -> ATOMIC NUMBER\n\n");
 	int choice2;

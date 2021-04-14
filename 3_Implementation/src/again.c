@@ -1,5 +1,9 @@
 #include "elements.h"
 
+/**
+ * @brief Function to enter if the process of searching needs to be repeated
+ * 
+ */
 void again() {
 	char ans1[5];
 	printf("\n\nSEARCH FOR A DIFFERENT ELEMENT? : ");

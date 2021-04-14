@@ -1,7 +1,10 @@
 #include "elements.h"
-
+/**
+ * @brief Function to set the interface of the application
+ * 
+ */
 void newScreen() {
-	// clrscr();
+	clrscr();
 	int width = 132;
 	char str[] = "PERIODIC TABLE";
 	int length = sizeof(str) - 1;

@@ -1,4 +1,14 @@
-#ifndef __heading_h__
+/**
+ * @file elements.h
+ * @author Khubi Thakkar (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-14
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+#ifndef __heading_h__		// if not defined only then define the header
 #define __heading_h__
 
 #include <stdio.h>
@@ -6,6 +16,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+/**
+ * @brief Structure to save the data about the element fetched from the .csv file
+ * 
+ */
 typedef struct element{
 		char name[25];
 		char anum[4];
@@ -36,8 +50,15 @@ typedef struct element{
 		char shell[2];
 		char valence[2];
 	    }elements;
+
+/**
+ * @brief variable atom of structure elements used in the program to extract the data form .csv file
+ * 
+ */
 elements atom;
 int i;
+
+// All the functions used in the project
 void newScreen();
 int main();
 void clrscr();
