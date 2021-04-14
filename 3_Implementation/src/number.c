@@ -151,7 +151,7 @@ int byAtNum(FILE *fp,char *ele){
         }else if(row == 119)
         {
             fclose(fp);
-            printf("Match not found");
+            printf("Match not found.\n Make sure you are entering an integer value.\n");
             return 1;
         }     
     }

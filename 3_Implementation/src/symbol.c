@@ -152,7 +152,7 @@ int bySym(FILE *fp,char *ele){
         }else if(row == 119)
         {
             fclose(fp);
-            printf("Match not found");
+            printf("Match not found.\n Make sure to capitalize the first letter.\n");
             return 1;
         }     
     }

@@ -149,7 +149,7 @@ int byName(FILE *fp, char *ele){
         }
         else if(row == 119){
             
-            printf("Match not found");
+            printf("Match not found.\n Make sure the first letter of element is capitalised and you are using the scientific name.\n");
             fclose(fp);
             return 1;
              
