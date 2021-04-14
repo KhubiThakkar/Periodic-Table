@@ -1,4 +1,4 @@
-name: Valgrind
+name: Dynamic Memory Check - Valgrind
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Valgrind:
     runs-on: ubuntu-latest
 
     steps:
