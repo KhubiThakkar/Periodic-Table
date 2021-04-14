@@ -1,10 +1,9 @@
 # Modern Periodic Table Application
 
-Visit [Pages for Report -optional](using github.io option)
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
-[![C/C++ CI](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/c-cpp.yml) | [![Static Cppcheck](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/cppcheck.yml) [![Dynamic Valgrind](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/CodeQuality_Dynamic.yml)| [![Unity - Unit Testing](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/unity.yml)| [![Git Inspector](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/prithvisekhar/AppliedSDLC_Template/actions/workflows/gitinspector.yml)
+Build | Code Coverage | Unit Testing | Static Analysis | Git Inspector | Memory Leak
+------|----------|-------|-------- | --- | ---
+[![C Compile - Build](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/build.yml) | [![CI-Coverage](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/coverage.yml/badge.svg?branch=master)](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/coverage.yml) | [![Unit Test - Unity](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/unit-test.yml/badge.svg?branch=master)](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/unit-test.yml) | [![Code Quality - Static Code - Cppcheck](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/cpp-check.yml/badge.svg?branch=master)](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/cpp-check.yml) | [![Contribution Check - Git Inspector](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/gitinspector.yml/badge.svg?branch=master)](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/gitinspector.yml) | [![Dynamic Memory Check - Valgrind](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/valgrind.yml/badge.svg?branch=master)](https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/valgrind.yml)
 
 
 ## Folder Structure
@@ -14,20 +13,17 @@ Folder             | Description
 `2_Design`         | Documents specifying design details
 `3_Implementation` | All code and documentation
 `4_Test_plan`      | Documents with test plans and procedures
+`5_Report`         | Documented details of the project
+`6_ImagesandVideo` | All the images used in Readme and the working of the application
+`7_Other`          | Miscellaneous (empty)
 
-## Contributors List and Summary
-
-PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ...
+> 1. Code now working with workflow: 
+        Using the absolute address, so changed to relative address.
+> 2. 
+
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
