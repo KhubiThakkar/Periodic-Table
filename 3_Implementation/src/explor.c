@@ -14,7 +14,7 @@ void search() {
 	int choice2;
 	printf("YOUR CHOICE : ");
 	scanf("%d",&choice2);
-    FILE *fp = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+    FILE *fp = fopen("./src/data.csv", "r");
     if (!fp){
         printf("Can't open file\n");
     }else{

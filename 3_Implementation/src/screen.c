@@ -4,7 +4,7 @@
  * 
  */
 void newScreen() {
-	// clrscr();
+	clrscr();
 	int width = 132;
 	char str[] = "PERIODIC TABLE";
 	int length = sizeof(str) - 1;

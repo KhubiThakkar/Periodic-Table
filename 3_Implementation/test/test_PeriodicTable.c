@@ -20,34 +20,34 @@ char sy4[]="fe";
 
 /* Write all the test functions */ 
 void test_name(void) {
-  FILE *ptr = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byName(ptr,name1));
-  FILE *ptr1 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr1 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byName(ptr1,name2));
-  FILE *ptr2 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr2 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byName(ptr2,name3));
-  FILE *ptr3 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr3 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byName(ptr3,name4));  
 }
 void test_symb(void)  {  
-  FILE *ptr = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, bySym(ptr,sy1));
-  FILE *ptr1 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr1 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, bySym(ptr1,sy3));
-  FILE *ptr2 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr2 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, bySym(ptr2,sy4));
-  FILE *ptr3 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr3 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, bySym(ptr3,sy2));
 
 }
 void test_atnum(void)  {
-  FILE *ptr = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byAtNum(ptr,atnm2));
-  FILE *ptr1 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr1 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byAtNum(ptr1,atnm3));
-  FILE *ptr2 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr2 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byAtNum(ptr2,atnm1));
-  FILE *ptr3 = fopen("/home/khubithakkar/Periodic-Table/3_Implementation/src/data.csv", "r");
+  FILE *ptr3 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byAtNum(ptr3,atnm4));
 }
 
