@@ -3,7 +3,7 @@
 The Mordern Periodic table project is a simple console application without the use of graphics. It is developed using the C programming language for the purpose of storing name, symbol, atomic number atomic weight and some important properties as well to display them as per requirement of the user.
 
 ### Research
-![Periodic Table](https://github.com/KhubiThakkar/Periodic-Table/blob/req/6_ImagesAndVideos/periodic-table-elements.jpg)  
+![Periodic Table](./6_ImagesAndVideos/periodic-table-elements.jpg)  
 The periodic table of the elements was first introduced in the mid-19th century by Dmitry Mendeleev. He organized the elements by atomic number, which is equal to number of protons found in the nucleus of the element's atoms.  
 You might need to find the element using their properties like: name, symbol and atomic number. Using periodic table can be confusing as they do not provide all around information and you need to derive their chemical properties like Number of Neutrons, Protons, Electrons, Phase and Electronic configuration.  
 
