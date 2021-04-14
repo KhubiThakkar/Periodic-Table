@@ -46,19 +46,18 @@ run: all
 # UNIT TESTING
 test: $(SRC) $(TEST_SRC)
 	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	ls -lla Build
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
-# COVERAGE CHECK
+COVERAGE CHECK
 coverage:${PROJECT_NAME}
 	gcc -fprofile-arcs -ftest-coverage -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(INC) $(SRC) project_main.c 
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	mv again.gcda clear.gcda explor.gcda name.gcda number.gcda quit.gcda screen.gcda symbol.gcda again.gcno clear.gcno explor.gcno name.gcno number.gcno quit.gcno screen.gcno symbol.gcno src
 	gcov -a -b -c $(SRC) project_main.c
 
-coverageCheck:$(BUILD)
-	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	./$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+# coverageCheck:$(BUILD)
+# 	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+# 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 #MAKE DIRECTORY
 doc:
