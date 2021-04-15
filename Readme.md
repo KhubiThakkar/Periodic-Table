@@ -17,6 +17,11 @@ Folder             | Description
 `6_ImagesandVideo` | All the images used in Readme and the working of the application
 `7_Other`          | Output files for Test Plans
 
+## Contributors List and Summary
+
+SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+-------|---------|----------------|----------------|---------------|-------------|--------------
+`261775` | Khubi Thakkar  | LR00, LR01, LR02, LR03, LR04, LR05   | 15     | 9   |7  |7 
 
 ## Challenges Faced and How Was It Overcome
 
@@ -28,6 +33,9 @@ Folder             | Description
 4 |Test case for void functions| Converted them to int functions and return 0 (on success) & return 1 (on failure)
 5 |Unit testcase workflow not working| Needed to add the build function to generate the executables of project_main.c file
 6 |Valgrind workflow not working| Needed to add the build function to generate the executables of project_main.c file
+7 | Requirement gathering was difficult and new concept | Read through multiple papers, formats and ways of doing it. Referred projects to understand the concept
+8 | UML diagrams | They were very difficult and tricky to understand, so went through multiple blogs, articles and youtube videos to understand them and find a suiting diagram for the project
+9 | *.gcda and *.gcno files where generated at different location | Used the move command to save them at different location in Makefile
 
 
 ## Learning Resources
