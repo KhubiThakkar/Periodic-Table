@@ -20,12 +20,14 @@ Folder             | Description
 
 ## Challenges Faced and How Was It Overcome
 
-1. Build workflow not working: Was using the absolute address, so changed to relative address.
-2. Test case not compiling: The file pointer which were passed multiple times in functions was getting closed inside the function. So declaring different pointers for every case.
-3. Code coverage: The code coverage required for me to run the code manually with inputs, so changed the executable with the executable of the test file. 
-4. Test case for void functions: Converted them to int functions and return 0 (on success) | return 1 (on failure)
-5. Unit testcase workflow not working: Needed to add the build function to generate the executables of project_main.c file
-6. Valgrind workflow not working: Needed to add the build function to generate the executables of project_main.c file
+**Sr no** | **Problem** | **Solution**
+--- | --- | ---
+1. | Build workflow not working | Was using the absolute address, so changed to relative address.
+2. |Test case not compiling | The file pointer which were passed multiple times in functions was getting closed inside the function. So declaring different pointers for every case.
+3. |Code coverage| The code coverage required for me to run the code manually with inputs, so changed the executable with the executable of the test file. 
+4. |Test case for void functions| Converted them to int functions and return 0 (on success) & return 1 (on failure)
+5. |Unit testcase workflow not working| Needed to add the build function to generate the executables of project_main.c file
+6. |Valgrind workflow not working| Needed to add the build function to generate the executables of project_main.c file
 
 
 ## Learning Resources

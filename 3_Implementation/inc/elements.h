@@ -61,7 +61,6 @@ int i;
 // All the functions used in the project
 void newScreen();
 int main();
-void clrscr();
 void quit();
 void search();
 int byAtNum(FILE *f, char *ele);
