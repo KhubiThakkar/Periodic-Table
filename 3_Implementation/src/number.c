@@ -152,7 +152,6 @@ int byAtNum(FILE *fp,char *ele){
         {
             fclose(fp);
             printf("Match not found.\n Make sure you are entering an integer value.\n");
-            fclose(fp);
             return 1;
         }     
     }

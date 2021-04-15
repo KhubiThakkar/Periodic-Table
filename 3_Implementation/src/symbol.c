@@ -153,7 +153,6 @@ int bySym(FILE *fp,char *ele){
         {
             fclose(fp);
             printf("Match not found.\n Make sure to capitalize the first letter.\n");
-            fclose(fp);
             return 1;
         }     
     }
