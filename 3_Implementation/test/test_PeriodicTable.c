@@ -1,10 +1,7 @@
 #include "unity.h"
 #include "elements.h"
 
-/* Modify these two lines according to the project */
-// #include "elements.h"
-// #define PROJECT_NAME    "Periodic Table"
-
+// declaring the necessary variables
 char name1[]="hydrogen";
 char name2[]="Hydrogen";
 char name3[]="Iron";
@@ -19,38 +16,73 @@ char sy3[]="Fe";
 char sy4[]="fe";
 
 /* Write all the test functions */ 
+/**
+ * @brief Senario based test function of "byName"
+ * 
+ */
 void test_name(void) {
   FILE *ptr = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byName(ptr,name1));
+  FILE *ptr3 = fopen("./src/data.csv", "r");
+  TEST_ASSERT_EQUAL(1, byName(ptr3,name4));  
+}
+
+/**
+ * @brief Requirement based test function of "byName"
+ * 
+ */
+void test_name1(void){
   FILE *ptr1 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byName(ptr1,name2));
   FILE *ptr2 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byName(ptr2,name3));
-  FILE *ptr3 = fopen("./src/data.csv", "r");
-  TEST_ASSERT_EQUAL(1, byName(ptr3,name4));  
 }
+
+/* Write all the test functions */ 
+/**
+ * @brief Requirement based test function of "bySym"
+ * 
+ */
 void test_symb(void)  {  
   FILE *ptr = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, bySym(ptr,sy1));
   FILE *ptr1 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, bySym(ptr1,sy3));
+}
+
+/**
+ * @brief Senario based test function of "bySym"
+ * 
+ */
+void test_symb1(void){
   FILE *ptr2 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, bySym(ptr2,sy4));
   FILE *ptr3 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, bySym(ptr3,sy2));
-
 }
+
+/* Write all the test functions */ 
+/**
+ * @brief Requirement based test function of "byAtNum"
+ * 
+ */
 void test_atnum(void)  {
   FILE *ptr = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byAtNum(ptr,atnm2));
   FILE *ptr1 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(1, byAtNum(ptr1,atnm3));
+}
+
+/**
+ * @brief Requirement based test function of "byAtNum"
+ * 
+ */
+void test_atnum1(void){
   FILE *ptr2 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byAtNum(ptr2,atnm1));
   FILE *ptr3 = fopen("./src/data.csv", "r");
   TEST_ASSERT_EQUAL(0, byAtNum(ptr3,atnm4));
 }
-
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -64,9 +96,12 @@ int main()
   UNITY_BEGIN();
 /* Run Test functions */
   RUN_TEST(test_name);
+  RUN_TEST(test_name1);
   RUN_TEST(test_symb);
+  RUN_TEST(test_symb1);
   RUN_TEST(test_atnum);
-
+  RUN_TEST(test_atnum1);
+  
   /* Close the Unity Test Framework */
   return UNITY_END();
 }

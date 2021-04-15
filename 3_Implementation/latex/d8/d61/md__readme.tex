@@ -1,0 +1,57 @@
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Build   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Code Coverage   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Unit Testing   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Static Analysis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Git Inspector   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Memory Leak    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Build   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Code Coverage   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Unit Testing   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Static Analysis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Git Inspector   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Memory Leak    }\\\cline{1-6}
+\endhead
+\href{https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/build.yml}{\texttt{ }}   &\href{https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/coverage.yml}{\texttt{ }}   &\href{https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/unit-test.yml}{\texttt{ }}   &\href{https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/cpp-check.yml}{\texttt{ }}   &\href{https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/gitinspector.yml}{\texttt{ }}   &\href{https://github.com/KhubiThakkar/Periodic-Table/actions/workflows/valgrind.yml}{\texttt{ }}   \\\cline{1-6}
+\end{longtabu}
+\hypertarget{md__readme_autotoc_md23}{}\doxysection{Folder Structure}\label{md__readme_autotoc_md23}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Folder   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Folder   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endhead
+{\ttfamily 1\+\_\+\+Requirements}   &Documents detailing requirements and research    \\\cline{1-2}
+{\ttfamily 2\+\_\+\+Design}   &Documents specifying design details    \\\cline{1-2}
+{\ttfamily 3\+\_\+\+Implementation}   &All code and documentation    \\\cline{1-2}
+{\ttfamily 4\+\_\+\+Test\+\_\+plan}   &Documents with test plans and procedures    \\\cline{1-2}
+{\ttfamily 5\+\_\+\+Report}   &Documented details of the project    \\\cline{1-2}
+{\ttfamily 6\+\_\+\+Imagesand\+Video}   &All the images used in Readme and the working of the application    \\\cline{1-2}
+{\ttfamily 7\+\_\+\+Other}   &Output files for Test Plans   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__readme_autotoc_md24}{}\doxysection{Challenges Faced and How Was It Overcome}\label{md__readme_autotoc_md24}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Sr no}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Problem}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Solution}}    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Sr no}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Problem}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Solution}}    }\\\cline{1-3}
+\endhead
+1.   &Build workflow not working   &Was using the absolute address, so changed to relative address.    \\\cline{1-3}
+2.   &Test case not compiling   &The file pointer which were passed multiple times in functions was getting closed inside the function. So declaring different pointers for every case.    \\\cline{1-3}
+3.   &Code coverage   &The code coverage required for me to run the code manually with inputs, so changed the executable with the executable of the test file.    \\\cline{1-3}
+4.   &Test case for void functions   &Converted them to int functions and return 0 (on success) \& return 1 (on failure)    \\\cline{1-3}
+5.   &Unit testcase workflow not working   &Needed to add the build function to generate the executables of \mbox{\hyperlink{project__main_8c}{project\+\_\+main.\+c}} file    \\\cline{1-3}
+6.   &Valgrind workflow not working   &Needed to add the build function to generate the executables of \mbox{\hyperlink{project__main_8c}{project\+\_\+main.\+c}} file   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__readme_autotoc_md25}{}\doxysection{Learning Resources}\label{md__readme_autotoc_md25}
+
+\begin{DoxyEnumerate}
+\item \href{https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet}{\texttt{ markdown\+Cheatsheet}}
+\item \href{https://guides.github.com/features/mastering-markdown/}{\texttt{ markdown\+Basics}}
+\item \href{https://github.com/ejwa/gitinspector.git}{\texttt{ git inspector}}
+\item \href{https://docs.github.com/en/actions/learn-github-action}{\texttt{ github workflow}} 
+\end{DoxyEnumerate}

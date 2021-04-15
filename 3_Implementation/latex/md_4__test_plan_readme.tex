@@ -1,0 +1,143 @@
+\hypertarget{md_4__test_plan_readme_autotoc_md10}{}\doxysection{Table\+: High level test plan}\label{md_4__test_plan_readme_autotoc_md10}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Test ID}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Description}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp I/P}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp O/P}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Actual Out}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Means of Test}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Type Of Test}}    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Test ID}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Description}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp I/P}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp O/P}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Actual Out}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Means of Test}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Type Of Test}}    }\\\cline{1-7}
+\endhead
+H\+\_\+01   &Searching the element   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Name 
+\item input \char`\"{}\+Iron\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_01ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_01ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Requirement based    \\\cline{1-7}
+H\+\_\+02   &Searching the element   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Symbol 
+\item input \char`\"{}\+Fe\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_02ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_02ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Requirement based    \\\cline{1-7}
+H\+\_\+03   &Searching the element   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Atomic Number 
+\item input \char`\"{}50\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_03ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_03ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Requirement based    \\\cline{1-7}
+H\+\_\+04   &Exit system   &
+\begin{DoxyItemize}
+\item Quit 
+\item Yes 
+\end{DoxyItemize}&\href{/7_Other/H_04ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_04ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Requirement based    \\\cline{1-7}
+H\+\_\+05   &Incorrect name   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Name 
+\item input \char`\"{}element\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_05ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_05ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Scenario based    \\\cline{1-7}
+H\+\_\+06   &Incorrect formatting of name   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Name 
+\item input \char`\"{}iron\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_06ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_06ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Scenario based    \\\cline{1-7}
+H\+\_\+07   &Incorrect symbol   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Symbol 
+\item input \char`\"{}ff\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_07ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_07ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Scenario based    \\\cline{1-7}
+H\+\_\+08   &Incorrect Atomic Number   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Atomic Number 
+\item input \char`\"{}1.\+2\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_08ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_08ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Scenario based    \\\cline{1-7}
+H\+\_\+09   &Incorrect format of symbol   &
+\begin{DoxyItemize}
+\item Explore 
+\item search by Symbol 
+\item input \char`\"{}fe\char`\"{}
+\end{DoxyItemize}&\href{/7_Other/H_09ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_09ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Scenario based    \\\cline{1-7}
+H\+\_\+10   &Not search more elements   &
+\begin{DoxyItemize}
+\item Explore 
+\item After searching 
+\item input \char`\"{}no\char`\"{} 
+\end{DoxyItemize}&\href{/7_Other/H_10ExpectOP.txt}{\texttt{ Expected OP}}   &\href{/7_Other/H_10ActualOP.txt}{\texttt{ Actual OP}}   &Tester   &Scenario based   \\\cline{1-7}
+\end{longtabu}
+\hypertarget{md_4__test_plan_readme_autotoc_md11}{}\doxysection{Table\+: Low level test plan}\label{md_4__test_plan_readme_autotoc_md11}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{7}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Test ID}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Description}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp IN}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp OUT}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Actual Out}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Means of Test}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Type Of Test}}    }\\\cline{1-7}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Test ID}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Description}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp IN}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Exp OUT}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Actual Out}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Means of Test}}   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Type Of Test}}    }\\\cline{1-7}
+\endhead
+L\+\_\+01   &Test by\+Name function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item name1\mbox{[}\mbox{]}   
+\end{DoxyItemize}&1   &1   &Unit Test Script   &Scenario based    \\\cline{1-7}
+L\+\_\+02   &Test by\+Name function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item name2\mbox{[}\mbox{]}   
+\end{DoxyItemize}&0   &0   &Unit Test Script   &Requirement based    \\\cline{1-7}
+L\+\_\+03   &Test by\+Name function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item name3\mbox{[}\mbox{]}   
+\end{DoxyItemize}&0   &0   &Unit Test Script   &Requirement based    \\\cline{1-7}
+L\+\_\+04   &Test by\+Name function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item name4\mbox{[}\mbox{]}   
+\end{DoxyItemize}&1   &1   &Unit Test Script   &Scenario based    \\\cline{1-7}
+L\+\_\+05   &Test by\+Sym function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item sy1\mbox{[}\mbox{]}   
+\end{DoxyItemize}&0   &0   &Unit Test Script   &Requirement based    \\\cline{1-7}
+L\+\_\+06   &Test by\+Sym function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item sy3\mbox{[}\mbox{]}   
+\end{DoxyItemize}&0   &0   &Unit Test Script   &Requirement based    \\\cline{1-7}
+L\+\_\+07   &Test by\+Sym function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item sy4\mbox{[}\mbox{]}   
+\end{DoxyItemize}&1   &1   &Unit Test Script   &Scenario based    \\\cline{1-7}
+L\+\_\+08   &Test by\+Sym function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item sy2\mbox{[}\mbox{]}   
+\end{DoxyItemize}&1   &1   &Unit Test Script   &Scenario based    \\\cline{1-7}
+L\+\_\+09   &Test by\+At\+Num function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item atnm2\mbox{[}\mbox{]}   
+\end{DoxyItemize}&1   &1   &Unit Test Script   &Scenario based    \\\cline{1-7}
+L\+\_\+10   &Test by\+At\+Num function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item atnm3\mbox{[}\mbox{]}   
+\end{DoxyItemize}&1   &1   &Unit Test Script   &Scenario based    \\\cline{1-7}
+L\+\_\+11   &Test by\+At\+Num function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item atnm1\mbox{[}\mbox{]}   
+\end{DoxyItemize}&0   &0   &Unit Test Script   &Requirement based    \\\cline{1-7}
+L\+\_\+12   &Test by\+At\+Num function   &
+\begin{DoxyItemize}
+\item FILE $\ast$ptr = fopen(\char`\"{}./src/data.\+csv\char`\"{}, \char`\"{}r\char`\"{});
+\item atnm4\mbox{[}\mbox{]}   
+\end{DoxyItemize}&0   &0   &Unit Test Script   &Requirement based   \\\cline{1-7}
+\end{longtabu}

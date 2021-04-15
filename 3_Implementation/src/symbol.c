@@ -12,21 +12,21 @@ int bySym(FILE *fp,char *ele){
 
 
     char buffer[1024];
-    int row = 0;
-    int column = 0;
+    int row = 0;    // row in the file
+    int column = 0; // column in the file
 
-    while (fgets(buffer,1024, fp)) {
+    while (fgets(buffer,1024, fp)) {    // to read the file
         column = 0;
         row++;
         if(row == 1){
             continue;
         }
-        char* value = strtok(buffer, ",");
+        char* value = strtok(buffer, ",");  // seperate from the delimiter
         while (value) {
         
             // Column 1
             if (column == 0) {
-                strcpy(atom.anum,value);
+                strcpy(atom.anum,value);    // copy the string to the string
             }
 
             // Column 2
@@ -140,19 +140,20 @@ int bySym(FILE *fp,char *ele){
                 strcpy(atom.valence,value);
             }
             
-            value = strtok(NULL, ",");
+            value = strtok(NULL, ",");  // check if that is end of column
             column++;
         }
-        if(strcmp(atom.symb,ele) == 0)
+        if(strcmp(atom.symb,ele) == 0)  // compare the string values, if they are same
         {
             printf("\n");
             printf(" Name: %s\n Atomic Number: %s\n Symbol: %s\n Atomic Weight: %s\n Neutrons: %s\n Protons: %s\n Electrons: %s\n Period: %s\n Group: %s\n Phase: %s\n Radioactive: %s\n Natural: %s\n Metal: %s\n Nonmetal: %s\n Metalloid: %s\n Type: %s\n Atomic Radius: %s\n Electronegativity: %s\n Ionization: %s\n Density: %s\n Melting point: %s\n Boiling point: %s\n Isotopes: %s\n Discoverer: %s\n Year: %s\n Specific Heat: %s\n Shell: %s\n Valence Electrons: %s\n",atom.name,atom.anum,atom.symb,atom.awgh,atom.neutrons,atom.protons,atom.electrons,atom.period,atom.group,atom.phase,atom.ra,atom.nat,atom.metal,atom.nonmetal,atom.metalloid,atom.type,atom.rad,atom.en,atom.ion,atom.den,atom.mp,atom.bp,atom.iso,atom.dis,atom.year,atom.heat,atom.shell,atom.valence);
-            fclose(fp);
+            fclose(fp); // close the file
             return 0;
-        }else if(row == 119)
+        }else if(row == 119)    // if the element is not in the file
         {
             fclose(fp);
             printf("Match not found.\n Make sure to capitalize the first letter.\n");
+            fclose(fp);
             return 1;
         }     
     }

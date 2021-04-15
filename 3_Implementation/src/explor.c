@@ -14,26 +14,27 @@ void search() {
 	int choice2;
 	printf("YOUR CHOICE : ");
 	scanf("%d",&choice2);
-    FILE *fp = fopen("./src/data.csv", "r");
-    if (!fp){
+    /// pointer to the data.csv file
+    FILE *fp = fopen("./src/data.csv", "r");    
+    if (!fp){       // if fopen is not successful
         printf("Can't open file\n");
-    }else{
-        if (choice2==1){
+    }else{          // if fopen is successful
+        if (choice2==1){    // to search by name
             printf("ENTER THE ELEMENT'S NAME : ");
             scanf("%s",ele);
-            int result=byName(fp,ele);
+            byName(fp,ele);
             again();
-        } else if (choice2==2){
+        } else if (choice2==2){     // to search by symbol
             printf("ENTER THE ELEMENT'S SYMBOL : ");
             scanf("%s",ele);
             bySym(fp,ele);
             again();
-        } else if (choice2==3){
+        } else if (choice2==3){     // to search by atomic number
             printf("ENTER THE ELEMENT'S ATOMIC NUMBER : ");
             scanf("%s",ele);
             byAtNum(fp,ele);
             again();
-        } else {
+        } else {        // for incorrect entry
             search();
         }
     }

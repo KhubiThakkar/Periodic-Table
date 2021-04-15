@@ -21,34 +21,62 @@
  * 
  */
 typedef struct element{
-		char name[25];
-		char anum[4];
-		char symb[3];
-		char awgh[6];
-		char neutrons[3];
+		/// name
+		char name[25];	
+		/// atomic number
+		char anum[4];	
+		/// symbol
+		char symb[3];	
+		/// atomic weight
+		char awgh[6];	
+		/// number of neutrons
+		char neutrons[3];	
+		/// number of protons
 		char protons[3];
-		char electrons[3];
-		char period[3];
-		char group[3];
-		char phase[10];
-		char ra[5];
-		char nat[5];
-		char metal[5];
-		char nonmetal[5];
-		char metalloid[5];
-		char type[20];
-		char rad[5];
-		char en[5];
-		char ion[10];
-		char den[10];
-		char mp[10];
-		char bp[10];
-		char iso[3];
-		char dis[20];
-		char year[4];
-		char heat[7];
-		char shell[2];
-		char valence[2];
+		/// number of electrons	
+		char electrons[3];	
+		/// period of element
+		char period[3];		
+		/// group of element
+		char group[3];	
+		/// phase of element	
+		char phase[10];		
+		/// radioactive
+		char ra[5];		
+		/// naturally occuring	
+		char nat[5];		
+		/// metallic nature
+		char metal[5];		
+		/// non metallic nature
+		char nonmetal[5];	
+		/// metalloid nature
+		char metalloid[5];	
+		/// type of element
+		char type[20];		
+		/// atomic radius
+		char rad[5];		
+		/// first ionization
+		char ion[10];		
+		/// electronegativity
+		char en[5];			
+		/// density
+		char den[10];		
+		/// melting point
+		char mp[10];		
+		/// boiling point
+		char bp[10];		
+		/// number of isotopes
+		char iso[3];		
+		///	discoverer
+		char dis[20];		
+		/// year of discovery
+		char year[4];		
+		/// specific heat
+		char heat[7];		
+		/// number of shells
+		char shell[2];		
+		/// number of valence
+		char valence[2];	
 	    }elements;
 
 /**
@@ -59,13 +87,63 @@ elements atom;
 int i;
 
 // All the functions used in the project
+/**
+ * @brief function to set up a New display screen
+ * 
+ */
 void newScreen();
+
+
+/**
+ * @brief main function
+ * 
+ * @return int 
+ */
 int main();
+
+/**
+ * @brief function to quit the system
+ * 
+ */
 void quit();
+
+/**
+ * @brief function to select the search the element by: name OR symbol OR atomic number
+ * 
+ */
 void search();
-int byAtNum(FILE *f, char *ele);
+
+/**
+ * @brief function to repeat the process of searching
+ * 
+ */
 void again();
+
+/**
+ * @brief function to search element by Atomic Number
+ * 
+ * @param FILE *f 
+ * @param char *ele 
+ * @return int 
+ */
+int byAtNum(FILE *f, char *ele);
+
+/**
+ * @brief function to search element by Symbol
+ * 
+ * @param FILE *f 
+ * @param char *ele 
+ * @return int 
+ */
 int bySym(FILE *f,char *ele);
+
+/**
+ * @brief function to search element by Name
+ * 
+ * @param FILE *f 
+ * @param char *ele 
+ * @return int 
+ */
 int byName(FILE *f,char *ele);
 
 #endif

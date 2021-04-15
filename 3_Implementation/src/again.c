@@ -8,7 +8,7 @@ void again() {
 	char ans1[5];
 	printf("\n\nSEARCH FOR A DIFFERENT ELEMENT? : ");
 	scanf("%s",ans1);
-	if (tolower(ans1[0])=='y'){
+	if (tolower(ans1[0])=='y'){	// convert the first letter of the input to lower case
 		search();
 	} else {
 		quit();

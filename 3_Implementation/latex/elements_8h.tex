@@ -1,0 +1,241 @@
+\hypertarget{elements_8h}{}\doxysection{3\+\_\+\+Implementation/inc/elements.h File Reference}
+\label{elements_8h}\index{3\_Implementation/inc/elements.h@{3\_Implementation/inc/elements.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structelement}{element}}
+\begin{DoxyCompactList}\small\item\em Structure to save the data about the element fetched from the .csv file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structelement}{element}} \mbox{\hyperlink{elements_8h_a504edb82a3ec5755bdd35dd9d92464bf}{elements}}
+\begin{DoxyCompactList}\small\item\em Structure to save the data about the element fetched from the .csv file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{elements_8h_af437fcd910ef0705dfbd26e8c006967c}{new\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em function to set up a New display screen \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{elements_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em main function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_a2463a3acef2df4c951ce942a3229e44e}{quit}} ()
+\begin{DoxyCompactList}\small\item\em function to quit the system \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_acfa13f24e1780367b83bd2531f17d850}{search}} ()
+\begin{DoxyCompactList}\small\item\em function to select the search the element by\+: name OR symbol OR atomic number \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{elements_8h_ab7c9a87739679053f1cc8d9924997e88}{again}} ()
+\begin{DoxyCompactList}\small\item\em function to repeat the process of searching \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{elements_8h_a7cdf0304b967a07aa11d5023e83190d3}{by\+At\+Num}} (FILE $\ast$\mbox{\hyperlink{unity_8c_af900396d7b72ff2a7002e8befe8cf8f1}{f}}, char $\ast$ele)
+\begin{DoxyCompactList}\small\item\em function to search element by Atomic Number \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{elements_8h_a903d106dcd902195b6a66353303f2268}{by\+Sym}} (FILE $\ast$\mbox{\hyperlink{unity_8c_af900396d7b72ff2a7002e8befe8cf8f1}{f}}, char $\ast$ele)
+\begin{DoxyCompactList}\small\item\em function to search element by Symbol \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{elements_8h_ad39bc46a7619a2c6afc97765e3708aa1}{by\+Name}} (FILE $\ast$\mbox{\hyperlink{unity_8c_af900396d7b72ff2a7002e8befe8cf8f1}{f}}, char $\ast$ele)
+\begin{DoxyCompactList}\small\item\em function to search element by Name \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{elements_8h_a504edb82a3ec5755bdd35dd9d92464bf}{elements}} \mbox{\hyperlink{elements_8h_a858673e2a5874cfa57d32f36ee7d87e1}{atom}}
+\begin{DoxyCompactList}\small\item\em variable atom of structure elements used in the program to extract the data form .csv file \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{elements_8h_acb559820d9ca11295b4500f179ef6392}{i}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Khubi Thakkar (\href{mailto:you@domain.com}{\texttt{ you@domain.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/04-\/14
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{elements_8h_a504edb82a3ec5755bdd35dd9d92464bf}\label{elements_8h_a504edb82a3ec5755bdd35dd9d92464bf}} 
+\index{elements.h@{elements.h}!elements@{elements}}
+\index{elements@{elements}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{elements}{elements}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structelement}{element}} \mbox{\hyperlink{elements_8h_a504edb82a3ec5755bdd35dd9d92464bf}{elements}}}
+
+
+
+Structure to save the data about the element fetched from the .csv file. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{elements_8h_ab7c9a87739679053f1cc8d9924997e88}\label{elements_8h_ab7c9a87739679053f1cc8d9924997e88}} 
+\index{elements.h@{elements.h}!again@{again}}
+\index{again@{again}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{again()}{again()}}
+{\footnotesize\ttfamily void again (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to repeat the process of searching 
+
+function to repeat the process of searching \mbox{\Hypertarget{elements_8h_a7cdf0304b967a07aa11d5023e83190d3}\label{elements_8h_a7cdf0304b967a07aa11d5023e83190d3}} 
+\index{elements.h@{elements.h}!byAtNum@{byAtNum}}
+\index{byAtNum@{byAtNum}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{byAtNum()}{byAtNum()}}
+{\footnotesize\ttfamily int by\+At\+Num (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{char $\ast$}]{ele }\end{DoxyParamCaption})}
+
+
+
+function to search element by Atomic Number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em FILE} & $\ast$f \\
+\hline
+{\em char} & $\ast$ele \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+function to search element by Atomic Number
+
+
+\begin{DoxyParams}{Parameters}
+{\em fp} & \\
+\hline
+{\em ele} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{elements_8h_ad39bc46a7619a2c6afc97765e3708aa1}\label{elements_8h_ad39bc46a7619a2c6afc97765e3708aa1}} 
+\index{elements.h@{elements.h}!byName@{byName}}
+\index{byName@{byName}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{byName()}{byName()}}
+{\footnotesize\ttfamily int by\+Name (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{char $\ast$}]{ele }\end{DoxyParamCaption})}
+
+
+
+function to search element by Name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em FILE} & $\ast$f \\
+\hline
+{\em char} & $\ast$ele \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+function to search element by Name
+
+
+\begin{DoxyParams}{Parameters}
+{\em fp} & \\
+\hline
+{\em ele} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{elements_8h_a903d106dcd902195b6a66353303f2268}\label{elements_8h_a903d106dcd902195b6a66353303f2268}} 
+\index{elements.h@{elements.h}!bySym@{bySym}}
+\index{bySym@{bySym}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{bySym()}{bySym()}}
+{\footnotesize\ttfamily int by\+Sym (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{fp,  }\item[{char $\ast$}]{ele }\end{DoxyParamCaption})}
+
+
+
+function to search element by Symbol 
+
+
+\begin{DoxyParams}{Parameters}
+{\em FILE} & $\ast$f \\
+\hline
+{\em char} & $\ast$ele \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+function to search element by Symbol
+
+
+\begin{DoxyParams}{Parameters}
+{\em fp} & \\
+\hline
+{\em ele} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{elements_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{elements_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{elements.h@{elements.h}!main@{main}}
+\index{main@{main}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+main function 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+The variable for the function to perform\+: search OR quit OR main\mbox{\Hypertarget{elements_8h_af437fcd910ef0705dfbd26e8c006967c}\label{elements_8h_af437fcd910ef0705dfbd26e8c006967c}} 
+\index{elements.h@{elements.h}!newScreen@{newScreen}}
+\index{newScreen@{newScreen}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{newScreen()}{newScreen()}}
+{\footnotesize\ttfamily void new\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to set up a New display screen 
+
+function to set up a New display screen \mbox{\Hypertarget{elements_8h_a2463a3acef2df4c951ce942a3229e44e}\label{elements_8h_a2463a3acef2df4c951ce942a3229e44e}} 
+\index{elements.h@{elements.h}!quit@{quit}}
+\index{quit@{quit}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to quit the system 
+
+function to quit the system \mbox{\Hypertarget{elements_8h_acfa13f24e1780367b83bd2531f17d850}\label{elements_8h_acfa13f24e1780367b83bd2531f17d850}} 
+\index{elements.h@{elements.h}!search@{search}}
+\index{search@{search}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily void search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to select the search the element by\+: name OR symbol OR atomic number 
+
+function to select the search the element by\+: name OR symbol OR atomic number pointer to the data.\+csv file
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{elements_8h_a858673e2a5874cfa57d32f36ee7d87e1}\label{elements_8h_a858673e2a5874cfa57d32f36ee7d87e1}} 
+\index{elements.h@{elements.h}!atom@{atom}}
+\index{atom@{atom}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{atom}{atom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{elements_8h_a504edb82a3ec5755bdd35dd9d92464bf}{elements}} atom}
+
+
+
+variable atom of structure elements used in the program to extract the data form .csv file 
+
+\mbox{\Hypertarget{elements_8h_acb559820d9ca11295b4500f179ef6392}\label{elements_8h_acb559820d9ca11295b4500f179ef6392}} 
+\index{elements.h@{elements.h}!i@{i}}
+\index{i@{i}!elements.h@{elements.h}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int i}
+
