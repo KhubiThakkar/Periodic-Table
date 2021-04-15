@@ -4,7 +4,6 @@ TEST_PROJ_NAME = test_$(PROJ_NAME)
 BUILD_DIR = Build
 
 SRC = src/again.c\
-src/clear.c\
 src/explor.c\
 src/name.c\
 src/number.c\
