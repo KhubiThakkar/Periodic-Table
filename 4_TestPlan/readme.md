@@ -32,3 +32,5 @@
 |  L_10       |Test byAtNum function| <ul><li>FILE *ptr = fopen("./src/data.csv", "r");<li>atnm3[]|1|1|Unit Test Script |Scenario based |
 |  L_11      |Test byAtNum function| <ul><li>FILE *ptr = fopen("./src/data.csv", "r");<li>atnm1[]|0|0|Unit Test Script |Requirement based |
 |  L_12       |Test byAtNum function| <ul><li>FILE *ptr = fopen("./src/data.csv", "r");<li>atnm4[]|0|0|Unit Test Script |Requirement based |
+|  L_13       |Test byAtNum function| <ul><li>FILE *ptr = fopen("./src/data.csv", "r");<li>atnm5[]|1|1|Unit Test Script |Boundary based |
+|  L_14      |Test byAtNum function| <ul><li>FILE *ptr = fopen("./src/data.csv", "r");<li>atnm6[]|1|1|Unit Test Script |Boundary based |
