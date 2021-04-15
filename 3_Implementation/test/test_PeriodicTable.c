@@ -14,6 +14,8 @@ char sy1[]="He";
 char sy2[]="ff";
 char sy3[]="Fe";
 char sy4[]="fe";
+char atnm5[]="-1";
+char atnm6[]="200";
 
 /* Write all the test functions */ 
 /**
@@ -84,6 +86,17 @@ void test_atnum1(void){
   TEST_ASSERT_EQUAL(0, byAtNum(ptr3,atnm4));
 }
 
+/**
+ * @brief Boundary based test function "byAtnum"
+ * 
+ */
+void test_atnum2(void){
+  FILE *ptr2 = fopen("./src/data.csv", "r");
+  TEST_ASSERT_EQUAL(1, byAtNum(ptr2,atnm5));
+  FILE *ptr3 = fopen("./src/data.csv", "r");
+  TEST_ASSERT_EQUAL(1, byAtNum(ptr3,atnm6));
+}
+
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
@@ -101,7 +114,8 @@ int main()
   RUN_TEST(test_symb1);
   RUN_TEST(test_atnum);
   RUN_TEST(test_atnum1);
-  
+  RUN_TEST(test_atnum2);
+
   /* Close the Unity Test Framework */
   return UNITY_END();
 }
