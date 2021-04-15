@@ -1,4 +1,4 @@
 # other
 
-* Add any other folders or files which are created for the project
+* All the high level requirements' output test files, done by the tester.
 

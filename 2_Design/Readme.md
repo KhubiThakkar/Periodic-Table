@@ -2,12 +2,13 @@
 
 ## High Level Design 
 
---- TBD Structural and Behavioural Diagram
-![HighLevelStructuralDiagram](Link to Pic)
+#### Component Diagram
+![HighLevelStructuralDiagram](/6_ImagesAndVideos/ComponentDia.jpeg)
+#### 
 ![HighLevelBehaviouralDiagram](Link to Pic)
 
 ## Low Level Design 
 
---- TBD Structural and Behavioural Diagram
-![FeaturesLevelStructuralDiagram](Link to Pic)
+#### Object Diagram
+![FeaturesLevelStructuralDiagram](/6_ImagesAndVideos/ObjectDiagram.jpeg)
 ![FeaturesBehaviouralDiagram](Link to Pic)
