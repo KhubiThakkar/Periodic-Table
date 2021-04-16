@@ -1,5 +1,6 @@
 # Modern Periodic Table Application
 
+![Logo](/6_ImagesAndVideos/periodiclogo.jpg)
 
 Build | Code Coverage | Unit Testing | Static Analysis | Git Inspector | Memory Leak
 ------|----------|-------|-------- | --- | ---
