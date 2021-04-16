@@ -1,4 +1,6 @@
 # Requirements
+
+![Logo](/6_ImagesAndVideos/periodiclogo.jpg)
 ### Introduction
 The Mordern Periodic table project is a simple console application without the use of graphics. It is developed using the C programming language for the purpose of storing name, symbol, atomic number atomic weight and some important properties as well to display them as per requirement of the user.
 
